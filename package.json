@@ -3,7 +3,8 @@
     "lint": "eslint src --fix --ext js,ts,jsx,tsx",
     "snoop": "code ./node_modules/eslint-plugin-local-rules/index.js",
     "ast": "open https://astexplorer.net",
-    "docs": "open https://eslint.org/docs/latest/extend/custom-rules"
+    "docs": "open https://eslint.org/docs/latest/extend/custom-rules",
+    "no-restrict": "open https://eslint.org/docs/latest/rules/no-restricted-syntax"
   },
   "devDependencies": {
     "eslint": "^8.41.0",
