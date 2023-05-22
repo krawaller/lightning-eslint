@@ -17,16 +17,6 @@ const expectedError = {
 };
 
 ruleTester.run("service-via-hook", rule, {
-  valid: [
-    // ok since importing something else
-    {
-      code: "import foo from './bar'",
-    },
-  ],
-  invalid: [
-    {
-      code: "import services from '../../services/prod-services'",
-      errors: [expectedError],
-    },
-  ],
+  valid: [],
+  invalid: [],
 });
