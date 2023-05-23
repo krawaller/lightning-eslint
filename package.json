@@ -4,7 +4,8 @@
     "snoop": "code ./node_modules/eslint-plugin-local-rules/index.js",
     "ast": "open https://astexplorer.net",
     "docs": "open https://eslint.org/docs/latest/extend/custom-rules",
-    "no-restrict": "open https://eslint.org/docs/latest/rules/no-restricted-syntax"
+    "no-restrict": "open https://eslint.org/docs/latest/rules/no-restricted-syntax",
+    "ast-selector": "open https://typescript-eslint.io/play/#ts=5.0.4&jsx=true&sourceType=module&showAST=es&code=JYWwDg9gTgLgBAMwhRUIjgcgHQHoxoAmAtAM4CmUAbsAMbmmZA&eslintrc=N4KABGBEBOCuA2BTAzpAXGYBfEWg&tsconfig=N4KABGBEDGD2C2AHAlgGwKYCcDyiAuysAdgM6QBcYoEEkJemy0eAcgK6qoDCAFutAGsylBm3TgwAXxCSgA"
   },
   "devDependencies": {
     "eslint": "^8.41.0",

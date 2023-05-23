@@ -15,8 +15,8 @@ module.exports = {
   },
   create: function (context) {
     return {
-      ImportDeclaration(node) {
-        const illegalAccess = node.source?.value?.endsWith?.("/prod-services");
+      ImportDeclaration: (node) => {
+        const illegalAccess = node?.source?.value?.endsWith?.("/prod-services");
         if (illegalAccess) {
           context.report({
             node,
@@ -25,6 +25,16 @@ module.exports = {
           });
         }
       },
+
+      // // Equivalent version using more advanced selectors
+
+      // "ImportDeclaration[source.value=/prod-services$/]": (node) => {
+      //   context.report({
+      //     node,
+      //     messageId: "access",
+      //     data: {}, // Props in here are accessable in message
+      //   });
+      // },
     };
   },
 };
